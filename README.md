@@ -4,7 +4,7 @@
 
 🌱 **Conceito & lógica:**
 
-Dado um vetor de tamanho **n** cada elemento de posição "i" será comparado com o elemento de posição **i + 1** quando a ordenação procurada é encontrada a troca de posição entre os elementos é feita. 
+Dado um vetor de tamanho **n** cada elemento de posição **i** será comparado com o elemento de posição **i + 1** quando a ordenação procurada é encontrada a troca de posição entre os elementos é feita. 
 
 📈 **Eficiência:**
 
