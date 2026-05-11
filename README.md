@@ -12,6 +12,7 @@ O algoritmo é simples de implementar, não há situações melhores ou piores, 
 
 📂 **Código:**
 
+[BubbleSort Algoritmo](BubbleSort-C.c)
 
 #### Selection Sort
 #### Insertion Sort
