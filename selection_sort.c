@@ -1,34 +1,5 @@
-/** O selection sort ordena um vetor encontrando repetidamente o menor elemento da parte ainda não ordenada/ajeitada e colocando-o no início dessa parte.
-Ele vai pegando o primeiro valor que não tiver ordenado e ordena-o, dps repete isso para todos os elementos
- 
-Passo a passo:
- 1. Comece com o primeiro elemento do vetor
- 2. Procure pelo menor elemento no restante do vetor
- 3. Troque o menor elemento encontrado com o primeiro elemento
- 4. Mova para o próximo elemento e repita os passos 2-3
- 5. Continue até que todo o vetor esteja ordenado
-
- Exemplo: [64, 25, 12, 22, 11]
-  Passo 1: Menor é 11 → [11, 25, 12, 22, 64]
-    -> O selection sort primeiro procura o menor elemento de todo o vetor e troca ele com o primeiro elemento
-  Passo 2: Menor é 12 → [11, 12, 25, 22, 64]
-  Passo 3: Menor é 22 → [11, 12, 22, 25, 64]
-  Passo 4: Menor é 25 → [11, 12, 22, 25, 64] ✓ Pronto!
-  
-
-LÓGICA SIMPLIFICADA:
- O Selection Sort funciona dividindo o vetor em duas partes:
- 1. Parte ORDENADA (à esquerda)
-    -> é a parte onde ele já 'passou' pelos elementos e fez as trocas
- 2. Parte NÃO ORDENADA (à direita)
-    -> a parte onde ele ainda não 'passou' pelos elementos, ou seja, onde ele ainda não fez as trocas
- 
-A CADA ITERAÇÃO:
- - Procura o MENOR elemento na parte não ordenada/parte não vista
- - Troca esse elemento com o primeiro elemento não ordenado
- - O elemento encontrado passa para a parte ordenada
- COMPLEXIDADE: O(n²) - não é o mais eficiente, mas é fácil de entender
- */
+/** O Selection Sort ordena um vetor encontrando repetidamente o menor elemento da parte ainda não ordenada/ajeitada e colocando-o no início dessa parte.
+Ele vai pegando o primeiro valor que não tiver ordenado e ordena-o, depois repete isso para todos os elementos*/
 
 #include <stdio.h>
 #include <stdlib.h>
