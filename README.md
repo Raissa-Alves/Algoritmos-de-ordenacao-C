@@ -17,6 +17,8 @@ O algoritmo é simples de implementar, não há situações melhores ou piores, 
 #### Selection Sort
 #### Insertion Sort
 
+#### Quick Sort 
+
 **Conceito e Lógica**
 
 Usa a técnica de "Dividir para Conquistar". Escolhe um "pivô", coloca os menores à esquerda e os maiores à direita, repetindo o processo recursivamente.
@@ -24,8 +26,8 @@ Usa a técnica de "Dividir para Conquistar". Escolhe um "pivô", coloca os menor
 **Eficiência:**
 
 Ele é super rápido, elém de que ordena os itens dentro do próprio vetor, sem precisar de memória extra ou cópias.
+ 
 
-#### Quick Sort 
 #### Merge Sort
 #### Heap Sort
 #### Radix Sort
