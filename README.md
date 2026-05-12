@@ -26,7 +26,8 @@ Usa a técnica de "Dividir para Conquistar". Escolhe um "pivô", coloca os menor
 **Eficiência:**
 
 Ele é super rápido, elém de que ordena os itens dentro do próprio vetor, sem precisar de memória extra ou cópias.
- 
+
+[QuickSort Algoritmo](quick.c).
 
 #### Merge Sort
 #### Heap Sort
