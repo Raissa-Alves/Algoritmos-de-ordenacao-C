@@ -17,6 +17,12 @@ O algoritmo é simples de implementar, não há situações melhores ou piores, 
 #### Selection Sort
 #### Insertion Sort
 
+**Conceito & lógica:**
+
+Dado um vetor de tamanho **n** será eleito para iniciar as comparações o segundo elemento deste vetor que está na posição **i** enquanto existir número à esquerda dos eleitos **i - 1** para comparação ele será comparado e trocado quando atender ao critério de ordenação (crescente/decrescente)
+
+**Eficiência:**
+
 #### Quick Sort 
 
 **Conceito e Lógica**
