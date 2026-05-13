@@ -1,5 +1,3 @@
-/** O Selection Sort ordena um vetor encontrando repetidamente o menor elemento da parte ainda não ordenada/ajeitada e colocando-o no início dessa parte.
-Ele vai pegando o primeiro valor que não tiver ordenado e ordena-o, depois repete isso para todos os elementos*/
 
 #include <stdio.h>
 #include <stdlib.h>
