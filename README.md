@@ -1,6 +1,6 @@
-### Algoritmos de ordenação.
+## Algoritmos de ordenação.
 
-#### Bubble Sort
+### Bubble Sort
 
 **Conceito & lógica:**
 
@@ -14,7 +14,7 @@ O algoritmo é simples de implementar, não há situações melhores ou piores, 
 
 [BubbleSort Algoritmo](BubbleSort-C.c)
 
-#### Selection Sort
+### Selection Sort
 
 **Conceito & lógica:**
 
@@ -46,7 +46,7 @@ A CADA ITERAÇÃO:
 
 [Selection Sort Algoritmo](selection_sort.c)
 
-#### Insertion Sort
+### Insertion Sort
 
 **Conceito & lógica:**
 
@@ -58,7 +58,7 @@ Dado um vetor de tamanho **n** será eleito para iniciar as comparações o segu
 
 [Insertion Sort Algoritmo](InsertionSort-C.c)
 
-#### Quick Sort 
+### Quick Sort 
 
 **Conceito e Lógica**
 
@@ -70,6 +70,6 @@ Ele é super rápido, elém de que ordena os itens dentro do próprio vetor, sem
 
 [QuickSort Algoritmo](quick.c).
 
-#### Merge Sort
-#### Heap Sort
-#### Radix Sort
+### Merge Sort
+### Heap Sort
+### Radix Sort
