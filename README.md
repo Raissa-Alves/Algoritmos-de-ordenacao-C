@@ -55,6 +55,7 @@ Dado um vetor de tamanho **n** será eleito para iniciar as comparações o segu
 **Eficiência:**
 
 **Codigo:**
+
 [Insertion Sort Algoritmo](InsertionSort-C.c)
 
 #### Quick Sort 
