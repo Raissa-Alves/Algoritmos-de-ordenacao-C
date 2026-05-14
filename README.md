@@ -21,7 +21,7 @@ O algoritmo é simples de implementar, não há situações melhores ou piores, 
 O selection sort ordena um vetor encontrando repetidamente o menor elemento da parte ainda não ordenada e colocando-o no início dessa parte.
 Ele vai pegando o primeiro valor que não tiver ordenado e ordena-o, depois repete isso para todos os elementos.
 
-LÓGICA SIMPLIFICADA:
+A lógica do Selection Sort:
  
  O Selection Sort funciona dividindo o vetor em duas partes:
  
@@ -32,7 +32,7 @@ LÓGICA SIMPLIFICADA:
     
     -> a parte onde ele ainda não verificou os elementos, ou seja, onde ele ainda não fez as trocas
  
-A CADA ITERAÇÃO:
+A cada iteração:
 
  - Procura o MENOR elemento na parte não ordenada/parte não vista
  - Troca esse elemento com o primeiro elemento não ordenado
@@ -40,7 +40,19 @@ A CADA ITERAÇÃO:
 
 **Eficiência:**
 
- COMPLEXIDADE: O(n²) - não é o mais eficiente, mas é fácil de entender
+- Tempo de execução: O(n^2) no pior, médio e melhor caso.
+- Espaço: O(1) - ordenação in-place.
+- Estabilidade: Não estável (pode mudar a ordem de elementos iguais).
+- Uso: É eficiente para pequenos conjuntos de dados ou quando a memória é limitada, mas geralmente
+
+Comparação de eficiência com outros algoritmos de ordenação:
+
+- Bubble Sort: O(n^2) - Ambos têm a mesma eficiência, mas o Selection Sort geralmente faz menos trocas do que o Bubble Sort.
+- Insertion Sort: O(n^2) - Ambos têm a mesma eficiência, mas o Insertion Sort é mais eficiente para conjuntos de dados que já estão parcialmente ordenados.
+- Merge Sort: O(n log n) - O Merge Sort é muito mais eficiente para grandes conjuntos de dados, mas requer espaço adicional para as operações de mesclagem.
+- Quick Sort: O(n log n) no melhor e médio caso, O(n^2) no pior caso - O Quick Sort é geralmente mais rápido na prática devido a melhor localidade de referência, mas o Selection Sort é mais consistente em termos de tempo de execução.
+- Heap Sort: O(n log n) - O Heap Sort é mais eficiente para grandes conjuntos de dados, mas o Selection Sort é mais simples e pode ser preferido para conjuntos de dados muito pequenos.
+- Radix Sort: O(n * k) onde k é o número de dígitos - O Radix Sort é mais eficiente para dados com muitos dígitos ou quando a comparação de chaves é cara, mas o Selection Sort é mais simples e pode ser preferido para conjuntos de dados muito pequenos.
 
 **Código:**
 
@@ -72,4 +84,48 @@ Ele é super rápido, elém de que ordena os itens dentro do próprio vetor, sem
 
 ### Merge Sort
 ### Heap Sort
+
+**Conceito & lógica:**
+
+ O Heap Sort é um algoritmo de ordenação eficiente que utiliza a estrutura de dados chamada "heap". 
+ Ele é baseado na ideia de construir uma "montanha" (heap) a partir dos elementos do vetor e, em seguida, extrair o maior elemento (o topo da montanha) repetidamente para ordenar o vetor.
+ Ele transforma o seu vetor (array) em uma estrutura chamada Heap, que nada mais é do que uma árvore binária organizada.
+
+A Lógica do Heap Sort (O Conceito da Montanha):
+
+Imagine que o seu vetor é uma montanha russa de números. O Heap Sort faz o seguinte:
+1. Construir a Montanha (Max-Heap): Ele reorganiza os números de forma que o maior valor esteja sempre no topo (a raiz).
+ 
+  -> Em um "Max-Heap", cada "pai" é sempre maior que seus "filhos".
+ 
+2. O Rei sai do Trono: Como o maior número está no topo, nós o trocamos com o último elemento da lista. 
+ 
+  -> Agora, o maior número está na posição correta (o final do vetor).
+ 
+3. Reajuste: A montanha ficou bagunçada porque o novo topo é um número pequeno. 
+ 
+  -> Chamamos uma função (o heapify) para "peneirar" esse número para baixo até que o próximo maior assuma o topo.
+ 
+4. Repetição: Repetimos o processo até que todos os números tenham passado pelo topo e sido colocados em suas posições finais.
+
+**Eficiência:**
+
+- Tempo de execução: O(n log n) no pior, médio e melhor caso.
+- Espaço: O(1) - ordenação in-place.
+- Estabilidade: Não estável (pode mudar a ordem de elementos iguais).
+- Uso: É eficiente para grandes conjuntos de dados e é amplamente utilizado em sistemas de ordenação interna.
+
+Comparação de eficiência com outros algoritmos de ordenação:
+
+- Bubble Sort: O(n^2) - Heap Sort é muito mais eficiente, pois o tempo de execução heap sort é O(n log n) enquanto o Bubble Sort é O(n^2).
+- Insertion Sort: O(n^2) - Heap Sort é mais eficiente para grandes conjuntos de dados.
+- Merge Sort: O(n log n) - Ambos têm a mesma eficiência, mas o Merge Sort é estável e requer espaço adicional, enquanto o Heap Sort é in-place.
+- Quick Sort: O(n log n) no melhor e médio caso, O(n^2) no pior caso - Heap Sort é mais consistente em termos de tempo de execução, mas o Quick Sort é geralmente mais rápido na prática devido a melhor localidade de referência.
+- Radix Sort: O(n * k) onde k é o número de dígitos - Heap Sort é mais eficiente para dados com muitos dígitos ou quando a comparação de chaves é cara.
+- Selection Sort: O(n^2) - Heap Sort é muito mais eficiente.
+
+**Código:**
+
+[Heap Sort Algoritmo](heap_sort.c)
+
 ### Radix Sort
