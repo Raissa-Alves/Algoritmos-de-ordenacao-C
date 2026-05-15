@@ -110,6 +110,8 @@ Técnica aplicada ao algoritmo:
 
 **Eficiência:**
 
+O Merge Sort  mantém o mesmo  desempenho em qualquer que seja o vetor de entrada, ele trabalhará da mesma maneira, dividindo o vetor ao meio, ordenando cada metade recursivamente e intercalando as duas metades ordenadas.
+
 **Codigo:**
 
 [Merge Sort Algoritmo](MergeSort.c).
