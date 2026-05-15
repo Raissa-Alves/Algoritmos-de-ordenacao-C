@@ -112,6 +112,7 @@ Técnica aplicada ao algoritmo:
 
 **Codigo:**
 
+[Merge Sort Algoritmo](MergeSort.c).
 
 ### Heap Sort
 
