@@ -90,6 +90,24 @@ Ele é super rápido, elém de que ordena os itens dentro do próprio vetor, sem
 
 **Conceito & lógica:**
 
+Dado um vetor de tamanho **n*** ele será dividido em vetores com a metade do tamanho original por meio de um procedimento recursivo. Essa divisão ocorre até que o vetor fique com apenas um elemento e estes sejam ordenados e intercalados.
+
+Neste algoritmo, é aplicada a técnica da divisão e conquista, uma técnica recursiva que envolve três passos em cada nível da recursão:
+
+1. Dividir o problema em um certo número de subproblemas.
+
+2. Conquistar os subproblemas solucionando-os recursivamente. Se os tamanhos dos subproblemas são suficientemente pequenos, então, solucionar os subproblemas de forma simples.
+
+3. Combinar as soluções dos subproblemas na solução de problema original.
+
+
+Técnica aplicada ao algoritmo: 
+1. Dividir: dividir a sequência de n elementos a serem ordenados em duas subsequências de n/2 elementos cada.
+
+2. Conquistar: ordenar as duas subsequências recursivamente utilizando a ordenação por intercalação;
+
+3. Combinar: intercalar as duas subsequências ordenadas para produzir a solução.
+
 **Eficiência:**
 
 **Codigo:**
