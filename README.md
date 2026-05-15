@@ -66,6 +66,8 @@ Dado um vetor de tamanho **n** será eleito para iniciar as comparações o segu
 
 **Eficiência:**
 
+O Insertion Sort não é considerado um algoritmo eficiente para grandes entradas, para este algoritmo o melhor cenário ocorre quando o vetor possui elementos já ordenados pois todos já estão em suas devidas posições, já o pior cenário ocorre quando o vetor fornecido possui os elementos na ordem inversa uma vez que deverá percorrer o array todo à esquerda trocando os elementos até encaixar o atual na primeira posição.
+
 **Codigo:**
 
 [Insertion Sort Algoritmo](InsertionSort-C.c)
